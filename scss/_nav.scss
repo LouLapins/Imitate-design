@@ -1,0 +1,65 @@
+// Lärde mig denna teknik från en youtube-tutorial (https://www.youtube.com/watch?v=sjrp1FEHnyA) och justerade för att passa uppgiften.
+nav {
+    width: $full;
+    position: absolute;
+    background: $transparentwhite;
+    .menu-btn {
+        display: none; // Gör själva checkboxen osynlig, bara labeln syns.
+    }
+    .menu-btn:checked~.menu {
+        max-height: 240px; // När checkboxen är i-klickad på blir menu 240px hög.
+    }
+    .menu-btn:checked~.menu-icon .nav-icon {
+        background-color: transparent; // När checkboxen är i-klickad blir mitten-strecket av hamburgaren osynligt.
+    }
+    .menu-btn:checked~.menu-icon .nav-icon:before {
+        @include transform (rotate(-45deg)); // När checkboxen är i-klickad roteras det nedersta strecket i hamburgaren.
+        top: 0;
+    }
+    .menu-btn:checked~.menu-icon .nav-icon:after {
+        @include transform (rotate(45deg)); // När checkboxen är i-klickad roteras det översta strecket. Tillsammans bildar de ett kryss.
+        top: 0;
+    }
+    .menu-icon {
+        // Positionering av hamburgaren.
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        .nav-icon {
+            // Styling av strecken i hamburgaren.
+            background-color: $primary;
+            display: block;
+            height: 5px;
+            width: 30px;
+            border-radius: 10px;
+            position: relative;
+            transition: background .2s ease-out;
+        }
+        .nav-icon:before {
+            // Positionering av strecken i hamburgaren.
+            @include navicon-before;
+            top: 10px;
+        }
+        .nav-icon:after {
+            @include navicon-before;
+            top: -10px;
+        }
+    }
+    .menu {
+        list-style-type: none;
+        max-height: 0; //Innan man klickat på hamburgaren är höjden noll.
+        overflow: hidden; //Gör menyn osynlig när höjden är noll.
+        transition: max-height .2s ease-out;
+        clear: right; //Fixar positionen av menyn som annars rubbas av float-elementet.
+        padding: 0;
+        margin: 0;
+        a {
+            //Styling av länkarna i menyn.
+            text-decoration: none;
+            color: $primary;
+            font-size: $font-s;
+            display: block;
+        }
+    }
+}

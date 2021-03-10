@@ -1,0 +1,36 @@
+/// Media queries ///
+// Navbar //
+@media (min-width:768px) {
+    nav li {
+        float: left; //Länkarna blir inline och hamnar därmed på rad.
+    }
+    nav li a {
+        padding: 17.5px 20px 17.5px 20px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    nav .menu {
+        clear: none;
+        float: right; // Menyn flyter upp till höger.
+        max-height: none;
+    }
+    nav .menu-icon {
+        display: none; // Hamburgaren försvinner.
+    }
+}
+
+// About section //
+@media (min-width:768px) {
+    .profile {
+        width: 37%;
+        padding: 3%;
+    }
+}
+
+// Footer //
+@media (min-width:768px) {
+    #contact {
+        flex-direction: row;
+    }
+}

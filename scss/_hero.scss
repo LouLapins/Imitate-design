@@ -1,0 +1,27 @@
+#hero {
+    background-image: url("../img/backgroundpic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    #hero-text {
+        height: 100vh;
+        @include flex-center;
+        flex-direction: column;
+        h1 {
+            width: 75%;
+            font-size: $font-l;
+        }
+        p {
+            width: 75%;
+            font-size: $font-s;
+        }
+    }
+    #downbutton1 a {
+        font-size: $font-m;
+        position: relative;
+        color: $primary;
+        bottom: 55px;
+    }
+}

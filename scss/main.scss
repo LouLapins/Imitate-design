@@ -1,0 +1,16 @@
+@import 'helpers';
+body,
+html {
+    height: $full;
+    color: $primary;
+    text-align: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+@import 'nav';
+@import 'hero';
+@import 'about';
+@import 'footer';
+@import 'mediaqueries';

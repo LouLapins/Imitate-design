@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some random page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/d55285fa64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Bakgrundsbild -->
+    <header id="hero">
+
+        <!--- Navbar -->
+        <nav>
+            <!-- Osynlig checkbox för att kunna använda :checked selectorn -->
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <!--- Hamburgar ikonen är checkboxens label -->
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <!--- Menyn -->
+            <ul class="menu">
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#about">Om</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div id="hero-text">
+            <h1>Welcome to nature</h1>
+            <p>A journey through time and sheep</p>
+            <p>To see how cotton is made</p>
+        </div>
+        <!-- Pil neråt ikon -->
+        <div id="downbutton1">
+            <a href="#about"><i class="fas fa-arrow-alt-circle-down"></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+
+        <h1>Träffa laget</h1>
+
+        <div id="laget-container">
+
+            <div class="profile">
+                <h4>Rakib</h4>
+                <!--Bild på Rakib-->
+                <img src="img/Rakib_Square.png" alt="Profile picture of Rakib">
+                <!---Grå citat ruta-->
+                <div class="text-bubble">
+                    <p><i class="fas fa-quote-right"></i> Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <h4>Alexandra</h4>
+                <!--Bild på Alexandra-->
+                <img src="img/Alexandra_Square.png" alt="Profile picture of Alexandra">
+                <!---Grå citat ruta-->
+                <div class="text-bubble">
+                    <p><i class="fas fa-quote-right"></i> Alexandra håller reda på alla överallt och ser till att det flyter</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <h4>Lasse</h4>
+                <!---Anonym bild-->
+                <img src="img/NoPerson_Square.png" alt="Anonymous profile picture">
+                <!--Grå citatruta-->
+                <div class="text-bubble">
+                    <p><i class="fas fa-quote-right"></i> Gör övriga saker... mestadels ...</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <h4>Sebastian</h4>
+                <!---Bild på Sebastian-->
+                <img src="img/Sebastian_Square.png" alt="Profile picture of Sebastian">
+                <!--Grå citatruta-->
+                <div class="text-bubble">
+                    <p><i class="fas fa-quote-right"></i> En av våra utbildare som har stor erfarenhet av ganska många saker</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pil neråt ikon -->
+        <a href="#contact"><i class="fas fa-arrow-alt-circle-down"></i></a>
+    </section>
+
+
+    <footer id="contact">
+
+        <div class="contactcol">
+            <p>Tegel Consulting AB</p>
+            <p>Agatvägen 18</p>
+            <p>168 60 Bromma</p>
+        </div>
+
+        <div class="contactcol">
+            <p>info at tegelconsultning.se</p>
+            <p>070-123 456 78</p>
+        </div>
+
+        <div class="contactcol">
+            <p><i class="fab fa-instagram"></i> Instagram</p>
+
+            <p><i class="fab fa-twitter"></i> Twitter</p>
+
+            <p><i class="fab fa-facebook-f"></i> Facebook</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

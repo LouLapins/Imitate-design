@@ -1,0 +1,32 @@
+        // Variables //
+        $primary: #ffffff;
+        $accent: #000000;
+        $transparentwhite: rgba(252, 250, 250, 0.2);
+        $font-xs: 1.2em;
+        $font-s: 1.4em;
+        $font-m: 1.6em;
+        $font-l: 2em;
+        $full: 100%;
+        // Mixins //
+        @mixin navicon-before {
+            height: $full;
+            width: $full;
+            background-color: $primary;
+            content: "";
+            display: block;
+            border-radius: 10px;
+            position: absolute;
+            transition: all .2s ease-out;
+        }
+        
+        @mixin flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @mixin transform($property) {
+            -webkit-transform: $property;
+            -ms-transform: $property;
+            transform: $property;
+        }
